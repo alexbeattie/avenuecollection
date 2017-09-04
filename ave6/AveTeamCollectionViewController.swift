@@ -95,10 +95,11 @@ class AveTeamCollectionViewController: UICollectionViewController {
         recentListings.removeAll()
         
         let query = PFQuery(className: "Team")
-        
+        query.order(byAscending: "createdAt")
 //        query.order(byDescending: "price")
         query.cachePolicy = .networkElseCache
-        
+        query.includeKey("Bob")
+
         query.findObjectsInBackground { (objects, error) -> Void in
             if error == nil {
                 if let objects = objects  {

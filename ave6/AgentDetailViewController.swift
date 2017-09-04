@@ -18,7 +18,8 @@ import SafariServices
 
 class AgentDetailViewController: UIViewController, MFMailComposeViewControllerDelegate  {
 
-
+    @IBOutlet weak var showListings: UIBarButtonItem!
+    
     @IBOutlet weak var agentDetailCollectionView: UICollectionView!
     @IBOutlet weak var propName: UILabel!
     @IBOutlet var propImage: UIImageView!

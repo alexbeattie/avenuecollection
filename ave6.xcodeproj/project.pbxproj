@@ -13,6 +13,8 @@
 		7868BB6E1F5B71430021E021 /* NewOurStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7868BB6D1F5B71430021E021 /* NewOurStory.swift */; };
 		78A8581C1F5CD0C800EE35D8 /* AgentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A8581B1F5CD0C800EE35D8 /* AgentDetailViewController.swift */; };
 		78A8581E1F5CDEDB00EE35D8 /* AvenueAgentListingCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A8581D1F5CDEDB00EE35D8 /* AvenueAgentListingCollection.swift */; };
+		78A858201F5CF14C00EE35D8 /* AgentCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A8581F1F5CF14C00EE35D8 /* AgentCollectionViewController.swift */; };
+		78A858221F5D151900EE35D8 /* AgentListingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A858211F5D151900EE35D8 /* AgentListingDetailViewController.swift */; };
 		78AE1E0B1F5B89CF00230DD5 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AE1E0A1F5B89CF00230DD5 /* ContainerViewController.swift */; };
 		8E006C3A1F1AD23300BDDAA4 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E006C391F1AD23300BDDAA4 /* CollectionViewController.swift */; };
 		8E006C3C1F1AD56200BDDAA4 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E006C3B1F1AD56200BDDAA4 /* CollectionViewCell.swift */; };
@@ -52,6 +54,8 @@
 		7868BB6D1F5B71430021E021 /* NewOurStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOurStory.swift; sourceTree = "<group>"; };
 		78A8581B1F5CD0C800EE35D8 /* AgentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDetailViewController.swift; sourceTree = "<group>"; };
 		78A8581D1F5CDEDB00EE35D8 /* AvenueAgentListingCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvenueAgentListingCollection.swift; sourceTree = "<group>"; };
+		78A8581F1F5CF14C00EE35D8 /* AgentCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentCollectionViewController.swift; sourceTree = "<group>"; };
+		78A858211F5D151900EE35D8 /* AgentListingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentListingDetailViewController.swift; sourceTree = "<group>"; };
 		78AE1E0A1F5B89CF00230DD5 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		8E006C391F1AD23300BDDAA4 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		8E006C3B1F1AD56200BDDAA4 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
@@ -222,10 +226,12 @@
 				8EF732941F1ACB89004CF9B2 /* AppDelegate.swift */,
 				8E7F84791F3CBEB700057563 /* BOD_R.TTF */,
 				8EF732981F1ACB89004CF9B2 /* Main.storyboard */,
+				78A858211F5D151900EE35D8 /* AgentListingDetailViewController.swift */,
 				78AE1E0A1F5B89CF00230DD5 /* ContainerViewController.swift */,
 				7868BB6D1F5B71430021E021 /* NewOurStory.swift */,
 				7868BB6B1F5B6CC20021E021 /* NewBio.swift */,
 				7868BB651F5A3E0F0021E021 /* AveTeamCollectionViewController.swift */,
+				78A8581F1F5CF14C00EE35D8 /* AgentCollectionViewController.swift */,
 				78A8581B1F5CD0C800EE35D8 /* AgentDetailViewController.swift */,
 				8E35604E1F4C77C5005738EB /* CustomTabController.swift */,
 				78A8581D1F5CDEDB00EE35D8 /* AvenueAgentListingCollection.swift */,
@@ -395,6 +401,7 @@
 				7868BB6A1F5A40B30021E021 /* AgentCollectionViewCell.swift in Sources */,
 				8EC880991F422EDF0006938C /* MovieController.swift in Sources */,
 				8E287E361F50E4B6000ABC7F /* ListingsTVC.swift in Sources */,
+				78A858201F5CF14C00EE35D8 /* AgentCollectionViewController.swift in Sources */,
 				8E3A8E911F254C0300AA28CD /* Annotations.swift in Sources */,
 				7868BB661F5A3E0F0021E021 /* AveTeamCollectionViewController.swift in Sources */,
 				78A8581C1F5CD0C800EE35D8 /* AgentDetailViewController.swift in Sources */,
@@ -408,6 +415,7 @@
 				8EF732951F1ACB89004CF9B2 /* AppDelegate.swift in Sources */,
 				8E7F847F1F3CDCC700057563 /* DescriptionCell.swift in Sources */,
 				8E35604F1F4C77C5005738EB /* CustomTabController.swift in Sources */,
+				78A858221F5D151900EE35D8 /* AgentListingDetailViewController.swift in Sources */,
 				8E7F847C1F3CBFB800057563 /* GradientView.swift in Sources */,
 				8E23CF5B1F4CC00D00B0309E /* AboutNew.swift in Sources */,
 				7868BB6C1F5B6CC20021E021 /* NewBio.swift in Sources */,
