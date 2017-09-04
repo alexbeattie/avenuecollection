@@ -12,6 +12,7 @@
 		7868BB6C1F5B6CC20021E021 /* NewBio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7868BB6B1F5B6CC20021E021 /* NewBio.swift */; };
 		7868BB6E1F5B71430021E021 /* NewOurStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7868BB6D1F5B71430021E021 /* NewOurStory.swift */; };
 		78A8581C1F5CD0C800EE35D8 /* AgentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A8581B1F5CD0C800EE35D8 /* AgentDetailViewController.swift */; };
+		78A8581E1F5CDEDB00EE35D8 /* AvenueAgentListingCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A8581D1F5CDEDB00EE35D8 /* AvenueAgentListingCollection.swift */; };
 		78AE1E0B1F5B89CF00230DD5 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AE1E0A1F5B89CF00230DD5 /* ContainerViewController.swift */; };
 		8E006C3A1F1AD23300BDDAA4 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E006C391F1AD23300BDDAA4 /* CollectionViewController.swift */; };
 		8E006C3C1F1AD56200BDDAA4 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E006C3B1F1AD56200BDDAA4 /* CollectionViewCell.swift */; };
@@ -50,6 +51,7 @@
 		7868BB6B1F5B6CC20021E021 /* NewBio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBio.swift; sourceTree = "<group>"; };
 		7868BB6D1F5B71430021E021 /* NewOurStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOurStory.swift; sourceTree = "<group>"; };
 		78A8581B1F5CD0C800EE35D8 /* AgentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDetailViewController.swift; sourceTree = "<group>"; };
+		78A8581D1F5CDEDB00EE35D8 /* AvenueAgentListingCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvenueAgentListingCollection.swift; sourceTree = "<group>"; };
 		78AE1E0A1F5B89CF00230DD5 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		8E006C391F1AD23300BDDAA4 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		8E006C3B1F1AD56200BDDAA4 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 				7868BB651F5A3E0F0021E021 /* AveTeamCollectionViewController.swift */,
 				78A8581B1F5CD0C800EE35D8 /* AgentDetailViewController.swift */,
 				8E35604E1F4C77C5005738EB /* CustomTabController.swift */,
+				78A8581D1F5CDEDB00EE35D8 /* AvenueAgentListingCollection.swift */,
 				8EF7329B1F1ACB89004CF9B2 /* Assets.xcassets */,
 				8EF7329D1F1ACB89004CF9B2 /* LaunchScreen.storyboard */,
 				8EF732A01F1ACB89004CF9B2 /* Info.plist */,
@@ -386,6 +389,7 @@
 			files = (
 				8EBDD5F81F522F360096DB3B /* WebView.swift in Sources */,
 				8E006C3A1F1AD23300BDDAA4 /* CollectionViewController.swift in Sources */,
+				78A8581E1F5CDEDB00EE35D8 /* AvenueAgentListingCollection.swift in Sources */,
 				78AE1E0B1F5B89CF00230DD5 /* ContainerViewController.swift in Sources */,
 				8E006C3E1F1AD66100BDDAA4 /* Config.swift in Sources */,
 				7868BB6A1F5A40B30021E021 /* AgentCollectionViewCell.swift in Sources */,

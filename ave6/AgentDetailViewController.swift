@@ -15,16 +15,23 @@ import MessageUI
 import SafariServices
 
 
+
 class AgentDetailViewController: UIViewController, MFMailComposeViewControllerDelegate  {
 
-//    @IBOutlet weak var playBtn: UIButton!
-    
-//    @IBOutlet weak var tableView: UITableView!
+
+    @IBOutlet weak var agentDetailCollectionView: UICollectionView!
     @IBOutlet weak var propName: UILabel!
     @IBOutlet var propImage: UIImageView!
     @IBOutlet weak var propDesc: UITextView!
+    @IBOutlet weak var agentTitle: UILabel!
     
+    @IBOutlet weak var agentEmail: UILabel!
+    @IBOutlet weak var agentPhonenumber: UILabel!
     
+  
+    @IBOutlet weak var agentEmailTxt: UITextView!
+   
+    @IBOutlet weak var agentNumberTxt: UITextView!
     
     @IBOutlet weak var containerScrollView: UIScrollView!
     
@@ -97,17 +104,17 @@ class AgentDetailViewController: UIViewController, MFMailComposeViewControllerDe
 //        }
 //    }
     
-    @IBAction func share(_ sender: Any) {
-        
-        let textToShare = propObj["agentName"]! as! String
-        guard let site = NSURL(string: propObj["url"]! as! String) else { return }
-        let objectsToShare = [textToShare, site] as [Any]
-        let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
-        activityVC.popoverPresentationController?.sourceView = sender as? UIView
-        activityVC.popoverPresentationController?.barButtonItem = (sender as! UIBarButtonItem)
-        self.present(activityVC, animated: true, completion: nil)
-        
-    }
+//    @IBAction func share(_ sender: Any) {
+//        
+//        let textToShare = propObj["agentName"]! as! String
+//        guard let site = NSURL(string: propObj["url"]! as! String) else { return }
+//        let objectsToShare = [textToShare, site] as [Any]
+//        let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+//        activityVC.popoverPresentationController?.sourceView = sender as? UIView
+//        activityVC.popoverPresentationController?.barButtonItem = (sender as! UIBarButtonItem)
+//        self.present(activityVC, animated: true, completion: nil)
+//        
+//    }
     
     
     override func viewDidLoad() {
@@ -118,84 +125,7 @@ class AgentDetailViewController: UIViewController, MFMailComposeViewControllerDe
 
     }
     
-    // MARK: UICollectionViewDataSource
-    
-//    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-//        // #warning Incomplete implementation, return the number of sections
-//        return 1
-//    }
-//
-//
-//    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        // #warning Incomplete implementation, return the number of items
-//        return recentListings.count
-//    }
-//
-//    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TeamCell", for: indexPath) as? AgentCollectionViewCell
-//
-//        var listingClass = PFObject(className: "Team")
-//        listingClass = recentListings[indexPath.row]
-//        DispatchQueue.main.async(execute: { () -> Void in
-//
-//            let imageFile = listingClass["agentImage"] as? PFFile
-//            imageFile?.getDataInBackground { (imageData, error) -> Void in
-//                if error == nil {
-//                    if let imageData = imageData {
-//                        cell?.agentImage.image = UIImage(data: imageData)
-//                    }
-//                    //cell.activityIndicator.stopAnimating()
-//                }
-//            }
-//        })
-//        if let listingName = listingClass["agentName"] as? String {
-//            cell?.agentName.text = listingName
-//        }
-//
-//        return cell!
-//    }
-//
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-//    func queryAgentListings() {
-//        agentListings.removeAll()
-//
-//        let query = PFQuery(className: "AgentListings")
-//
-//        //        query.order(byDescending: "price")
-//        query.cachePolicy = .networkElseCache
-//
-//        query.findObjectsInBackground { (objects, error) -> Void in
-//            if error == nil {
-//                if let objects = objects  {
-//                    for object in objects {
-//                        self.agentListings.append(object)
-//                        print(object)
-//                    }
-//                }
-//                self.agentDetailCollectionView.reloadData()
-//                //self.view.hideHUD()
-//            } else {
-//                print("alex")
-//
-//            }
-//        }
-//    }
+   
     override func viewWillAppear(_ animated: Bool) {
         print("Im in View Will Appear")
         super.viewWillAppear(animated)
@@ -227,10 +157,24 @@ class AgentDetailViewController: UIViewController, MFMailComposeViewControllerDe
 //        } else { propPrice.text = "N/A" }
         if propObj["agentName"] != nil { propName.text = "\(propObj["agentName"]!)"
         } else { propName.text = "N/A" }
+        if propObj["agentTitle"] != nil { agentTitle.text = "\(propObj["agentTitle"]!)"
+        } else { propName.text = "N/A" }
+        
+        
+        
+        
         
         
         if propObj["agentDetails"] != nil {  propDesc.text = "\(propObj["agentDetails"]!)"
         } else { propDesc.text = "Details are not available" }
+        
+        if propObj["agentEmail"] != nil {  agentEmailTxt.text = "\(propObj["agentEmail"]!)"
+        } else { agentEmailTxt.text = "Details are not available" }
+        
+        if propObj["agentPhone"] != nil {  agentNumberTxt.text = "\(propObj["agentPhone"]!)"
+        } else { agentNumberTxt.text = "Details are not available" }
+        
+        
         propDesc.sizeToFit()
         detailsView.frame.origin.y = propDesc.frame.size.height + propDesc.frame.origin.y + 10
         DispatchQueue.global(qos: .userInitiated).async { // 1
